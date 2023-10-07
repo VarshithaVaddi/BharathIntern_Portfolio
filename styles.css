@@ -24,13 +24,15 @@ nav {
     display: flex;
     justify-content: space-between;
     flex-wrap: wrap;
-    position: relative; /* Establish a stacking context */
+    position: relative; 
     z-index: 2; 
+    position: fixed;
 }
 nav ul li {
     margin: 10px 20px;
     display: inline-block;
     list-style-type: none;
+    margin-top: 50px;
 }  
 nav ul{
     margin-left: 850px;
@@ -60,22 +62,21 @@ nav ul li a:hover {
     font-size: 30px;
     color: white;
     line-height:80px;
-    flex: 1; /* Take up remaining available space */
+    flex: 1; 
     padding-right: 20px;
     margin-left: -60px;
 }
 .pic{
     display: flex;
-    justify-content: flex-end; /* Push the image to the right */
+    justify-content: flex-end;
     align-items: center;
 }
 .pic img {
-    max-width: 100%; /* Make sure the image doesn't exceed its container */
-    height: 800px;
+    max-width: 100%; 
     margin-top: -670px;
     margin-right: -190px;
     width: 980px;
-    height: 910px;
+    height: 1000px;
     border-radius: 10px;
 }
 .btn1{
@@ -104,18 +105,20 @@ nav ul li a:hover {
 }
 .row {
     display: flex;
-    flex-wrap: wrap; /* Vertically align items */
-    justify-content: space-between; /* Align items to the left of the container */
+    flex-wrap: wrap; 
+    justify-content: space-between; 
 }
 
 .col-1 {
     flex: basis 35%;;
 }
 .image{
-    width: 500px;
-    border-radius: 30%;
+    width: 540px;
+    border-radius: 30px;
     margin: 80px 0;
-    margin-left: -70px;
+    margin-left: -90px;
+    height: 400px;
+    margin-top: 110px;
     
 }
 .col-2 {
@@ -153,7 +156,6 @@ nav ul li a:hover {
     font-size: 20px;
 }
 .tab-titles p:hover {
-    color: greenyellow;
     transform: translateY(-5px);
 }
 
